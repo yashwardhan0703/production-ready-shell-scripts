@@ -1,0 +1,36 @@
+version: "3.9"
+
+networks:
+  prod-network:
+    external: true
+
+volumes:
+  postgres-data:
+  mongo-data:
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_DB: appdb
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: strongpassword
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - prod-network
+
+  mongo:
+    image: mongo:6
+    container_name: mongo_db
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - prod-network
