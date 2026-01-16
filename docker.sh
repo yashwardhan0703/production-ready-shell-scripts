@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "🔹 Installing Docker..."
+echo "Installing Docker..."
 
 sudo apt update -y
 sudo apt install -y ca-certificates curl gnupg lsb-release
@@ -21,4 +21,4 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 sudo usermod -aG docker $USER
 
-echo "✅ Docker installed → logout & login required"
+echo "Docker installed → logout & login required"
