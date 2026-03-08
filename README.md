@@ -37,14 +37,20 @@ This repository serves as:
 
 ---
 
-## 📂 Repository Structure
+##⚡ Quick Server Bootstrap
+
+Run the following command on a fresh Ubuntu server to automatically install common DevOps tools.
+This script installs:
+
+-Git
+-Docker
+-Docker Compose
+-Nginx
+-Optional SSH key generation for GitHub
 
 ```bash
-production-ready-shell-scripts/
-├── README.md
-├── docker.sh
-├── docker-network.sh
-├── docker-compose.db.yml
-├── databases.sh
-├── nginx.sh
-├── git_pull_var_www.sh
+curl -fsSL https://raw.githubusercontent.com/yashwardhan0703/production-ready-shell-scripts/main/bootstrap-devops.sh | bash
+```
+---
+
+
