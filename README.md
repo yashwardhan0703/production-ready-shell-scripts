@@ -173,15 +173,4 @@ If you have ideas for useful DevOps scripts, feel free to:
 
 ---
 
-## 👨‍💻 Author
-
-**Yashwardhan Shakya**
-
-DevOps Enthusiast | Linux | Docker | CI/CD | Cloud
-
-GitHub:
-https://github.com/yashwardhan0703
-
----
-
 ⭐ If you find this repository helpful, consider giving it a **star**.
